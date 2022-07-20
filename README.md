@@ -29,7 +29,7 @@ Dari isu yang telah digambarkan diatas, kita akan menganalisis data perusahaan y
 Kemudian juga kita akan membuat machine learning dengan model klasifikasi yang akan membantu perusahaan untuk dapat memprediksi probabilitas seorang calon customer yang layak dan benar-benar mampu untuk membeli policy dan membayar premi per bulannya sehingga mendapatkan response yes dan no dari perusahaan.
 
 ### Evaluation Metric
-<img src="pictures/confusion_matrix.jpeg" alt="Confusion Matrix"/><br>
+![confusion_matrix](https://user-images.githubusercontent.com/56780448/179948404-e0376eb3-04e5-409f-8120-b0bda7e44d8f.jpeg)<br>
 - Type 1 error : False Positive  
 Konsekuensi : Perusahaan berpotensi kehilangan nasabah dikarenakan calon customer sulit untuk membayar sehingga perusahaan akan kehilangan waktu, sumber daya dan biaya approach calon customer
 
@@ -84,7 +84,7 @@ Dari hal tersebut, metric utama yang akan kita gunakan adalah `Accuracy` dan `Re
 
 <a id="Exploratory-Data-Analysis"></a> 
 ## Data Analysis
-<img src="pictures/responses.png" alt="Distribution of Response"/><br>
+![responses](https://user-images.githubusercontent.com/56780448/179947952-8c486f70-45ee-46f8-9042-d3a135691883.png)<br>
 Berdasarkan data yang kita punya, hanya 1308 dari 9134 calon customer (14.32%) yang mendapat response yes dari perusahaan. Dilirik dari sisi bisnis, kemungkinan banyak variable-variable yang menjadi pertimbangan company untuk menerima applicant dari calon customer mereka.
 
 Hal ini juga kita sadari bahwa pada target data kita nantinya (response) memiliki `imbalance` data. Hal ini perlu kita jadikan perhatian dan proses pada tahap selanjutnya (Preprocessing).
@@ -93,7 +93,7 @@ Hal ini juga kita sadari bahwa pada target data kita nantinya (response) memilik
 ## Conclusion and Recommendation
 ### Conclusion
 Setelah dilakukan berbagai proses, didapatkan model terahir hasil:
-<img src="pictures/final.png" alt="Final Classification Report"/><br>
+![final](https://user-images.githubusercontent.com/56780448/179948144-87d58a45-1b9f-4cbe-a26a-bbccb9dda027.png)<br>
 
 Berdasarkan hasil classification report dari model kita, kita dapat menyimpulkan bahwa jika seandainya nanti kita menggunakan model kita untuk memfilter calon customer yang akan mendapatkan response yes, maka model kita dapat memprediksi response yes sebanyak 93% dari keseluruhan calon customer yang sebenarnya mendapatkan response yes dan mengurangi 90% calon customer yang mendapatkan response no untuk kita tidak approach (recall). 
 
